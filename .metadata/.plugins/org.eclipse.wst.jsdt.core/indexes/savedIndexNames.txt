@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\springdummy\7_Framework\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4159871977.index
+4144562778.index
+804668264.index
+2995325224.index
+4002528201.index
+560996179.index
+4134534535.index

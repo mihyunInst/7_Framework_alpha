@@ -1,0 +1,12 @@
+package edu.kh.comm.mail.model.vo;
+
+import java.sql.Date;
+
+public class Email {
+	
+	private int mailNo;
+	private String mailContent;
+	private String mailTo;
+	private String mailFrom;
+	private Date mailDate;
+}

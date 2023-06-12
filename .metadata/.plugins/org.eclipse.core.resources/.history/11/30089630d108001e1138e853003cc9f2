@@ -1,0 +1,21 @@
+package edu.kh.comm.mail.model.vo;
+
+import java.sql.Date;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
+public class Email {
+	
+	private int mailNo;
+	private String mailContent;
+	private String mailTo;
+	private String mailFrom;
+	private Date mailDate;
+}

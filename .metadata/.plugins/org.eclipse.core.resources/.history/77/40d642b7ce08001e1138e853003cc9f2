@@ -1,0 +1,40 @@
+package edu.kh.comm.mail.model.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.stereotype.Service;
+
+import edu.kh.comm.mail.model.dao.EmailDAO;
+import edu.kh.comm.member.model.vo.Member;
+
+@Service
+public class EmailServiceImpl implements EmailService{
+
+	@Autowired
+    private EmailDAO dao;
+    
+    @Autowired
+    private JavaMailSender mailSender;
+    
+    private String fromEmail = "cmhinst@gmail.com";
+    private String fromUsername = "";
+    
+    
+	@Override
+	public int sendEmail(String mailContent, Member loginMember) {
+		
+		try {
+
+			fromUsername = loginMember.getMemberNickname();
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
+    
+
+    
+
+}

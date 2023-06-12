@@ -1,0 +1,7 @@
+package edu.kh.comm.mail.model.service;
+
+public interface EmailService {
+
+	int sendEmail(String mailContent);
+
+}
